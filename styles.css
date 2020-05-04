@@ -43,21 +43,21 @@ body, html {
 }
 
 .music {
-    background-image: url('/img/hm.svg'), url('/img/moon.svg');
+    background-image: url('./img/hm.svg'), url('./img/moon.svg');
     background-position: bottom 1% right -5%, top 5% left 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: 30%, 10%;
 }
 
 .wc {
-    background-image: url('/img/hm2.svg'), url('/img/moon.svg');
+    background-image: url('./img/hm2.svg'), url('./img/moon.svg');
     background-position: bottom 1% left -5%, top 5% left 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: 30%, 10%;
 }
 
 .qt {
-    background-image: url('/img/hm3.svg'), url('/img/moon.svg');
+    background-image: url('./img/hm3.svg'), url('./img/moon.svg');
     background-position: bottom 1% left -5%, top 5% left 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: 30%, 10%;
