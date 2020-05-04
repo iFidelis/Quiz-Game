@@ -1,0 +1,133 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #18052B;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ptop-m {
+    padding-top: 50px;
+  }
+  
+  .pbtm-l {
+    padding-bottom: 50px;
+  }
+  
+  .w-60 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .fname input{
+    width: 40%;
+    padding: 1.3em;
+    font-size: 1em;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 0 solid #e2e8f0;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    color: rgb(129, 129, 129);
+    text-align: center;
+  }
+  
+
+.wrap {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.music {
+    background-image: url('/img/hm.svg'), url('/img/moon.svg');
+    background-position: bottom 1% right -5%, top 5% left 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%, 10%;
+}
+
+.wc {
+    background-image: url('/img/hm2.svg'), url('/img/moon.svg');
+    background-position: bottom 1% left -5%, top 5% left 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%, 10%;
+}
+
+.qt {
+    background-image: url('/img/hm3.svg'), url('/img/moon.svg');
+    background-position: bottom 1% left -5%, top 5% left 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%, 10%;
+}
+
+
+.qtn {
+    position: fixed;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.txt {
+    text-align: center;
+}
+
+.txt h1{
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+.txt p {
+    font-size: 1.5em;
+}
+
+.btn-primary {
+    background-color: #18052B;
+    width: 40%;
+    border: 2px solid #585670;
+    padding: 1em 4em;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: #353449;
+    width: 30%;
+    border: 2px solid #585670;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #353449;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer span {
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .w-60 {
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}
