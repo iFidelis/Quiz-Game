@@ -151,4 +151,8 @@ body, html {
     .wc, .qt, .music {
         background-size: 60%, 30%;
     }
+
+    .txt h1{
+        font-size: 2rem;
+    }
 }
