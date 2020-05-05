@@ -66,7 +66,7 @@ body, html {
 
 .qtn {
     position: fixed;
-    width: 80%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -99,7 +99,7 @@ body, html {
 .btn-secondary {
     background-color: #353449;
     width: 30%;
-    border: 2px solid #585670;
+    border: none;
     padding: 1em 2em;
     color: white;
     cursor: pointer;
@@ -121,13 +121,30 @@ body, html {
     padding-top: 10px;
 }
 
+.correct {
+    background-color: green;
+}
 
-@media only screen and (max-width: 600px) {
-    .w-60 {
+.wrong {
+    background-color: red;
+}
+
+.blinking{
+    animation:blinkingText 10s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #f7f7f7;    }
+    49%{    color: #f7f7f7; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #f7f7f7;    }
+}
+
+@media only screen and (max-width: 800px) {
+    .btn-primary, .btn-secondary, .fname input, .w-60 {
         width: 100%;
     }
-
-    .btn-primary, .btn-secondary {
-        width: 100%;
-    }
+    .ptop-m {
+        padding-top: 20px;
+      }
 }
