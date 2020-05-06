@@ -96,6 +96,10 @@ body, html {
     text-align: center;
 }
 
+.next {
+    display: none;
+}
+
 .btn-secondary {
     background-color: #353449;
     width: 30%;
@@ -112,13 +116,14 @@ body, html {
     background-color: #353449;
 }
 
-.answer {
+.answers {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.answer span {
-    padding-top: 10px;
+.answers div {
+    margin-top: 10px;
 }
 
 .correct {
@@ -129,16 +134,16 @@ body, html {
     background-color: red;
 }
 
-.blinking{
+/* .blinking{
     animation:blinkingText 10s infinite;
-}
-@keyframes blinkingText{
+} */
+/* @keyframes blinkingText{
     0%{     color: #f7f7f7;    }
     49%{    color: #f7f7f7; }
     60%{    color: transparent; }
     99%{    color:transparent;  }
     100%{   color: #f7f7f7;    }
-}
+} */
 
 @media only screen and (max-width: 800px) {
     .btn-primary, .btn-secondary, .fname input, .w-60 {
@@ -155,4 +160,12 @@ body, html {
     .txt h1{
         font-size: 2rem;
     }
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
 }
