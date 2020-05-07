@@ -6,7 +6,7 @@ const nextBtn = document.querySelector('.next');
 
 let score = 0;
 let wrong = 0;
-let scoreMark = 5;
+let scoreMark = 0;
 let fidelisQuestions = [
     {
         // Put your question here

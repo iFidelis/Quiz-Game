@@ -134,7 +134,7 @@ body, html {
     background-color: red;
 }
 
-.score {
+.wrap .score {
     position: relative;
     font-size: 3em;
     display: block;
