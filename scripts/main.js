@@ -84,7 +84,7 @@ answers.forEach( answer => {
         // If user selects the right answer add a classList of "CORRECT".
         selectedAnswer == fidelisQuestions[0].answer ? (
             classToApply = 'correct',
-            addScore(scoreMark) ) :
+            addScore(scoreMark)) :
             // If user selects the wrong option add a classList of "INCORRECT"
             selectedChoice.classList.add(classToApply);
 
