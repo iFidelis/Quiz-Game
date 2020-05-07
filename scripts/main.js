@@ -6,34 +6,50 @@ const nextBtn = document.querySelector('.next');
 
 let score = 0;
 let wrong = 0;
-let scoreMark = 1;
+let scoreMark = 5;
 let fidelisQuestions = [
     {
         // Put your question here
-        question : "The day after the day after tomorrow is four days before Monday. What day is it today?",
-        // Your subQuestion goes here
-        subQuestion: "blah blah",
+        question : "The inability to make decisions",
+        //Hints
+        subQuestion : "Spanish",
         // Your answers goes here
-        answers1 : "Monday",
-        answers2 : "Tuesday",
-        answers3 : "Wednesday",
+        answers1 : "Abulia",
+        answers2 : "Mabulia",
+        answers3 : "Zeebulia",
         answer : 1
     },
     {
-        question : "How many legs does an insect have?",
-        subQuestion: "blah blah",
-        answers1 : 19,
-        answers2 : 3,
-        answers3 : 6,
+        question : "A wart that hangs down like a string",
+        subQuestion : "Skins",
+        answers1 : "Acrochordon",
+        answers2 : "Archinad",
+        answers3 : "Strands",
+        answer : 1
+    },
+    {
+        question : "The plastic tip at the end of a shoelace",
+        subQuestion : ":-(",
+        answers1 : "Bimble",
+        answers2 : "Gidles",
+        answers3 : "Aglet",
         answer : 3
     },
     {
-        question : "Who is JEFF?",
-        subQuestion: "blah blah",
-        answers1 : "A Person",
-        answers2 : "A Boy",
-        answers3 : "A Mentor",
-        answer : 4
+        question : "The wire cage holding the cork in a bottle of champagne",
+        subQuestion : "Long necks",
+        answers1 : "Twine",
+        answers2 : "Agraffe",
+        answers3 : "Fillis",
+        answer : 2
+    },
+    {
+        question : "The little loops for a belt on a pair of trousers or raincoat",
+        subQuestion : "Holds css properties",
+        answers1 : "Lace-loop",
+        answers2 : "Bowyang",
+        answers3 : "Beckets",
+        answer : 3
     }
 ];
 
@@ -85,7 +101,7 @@ answers.forEach( answer => {
             if( fidelisQuestions.length === 1 ) nextBtn.innerText = "View your result";
 
             // If question array length equals zero, take me to the end game screen.
-            if( fidelisQuestions.length === 0 ) return  window.location.href = "endgame.html";
+            if( fidelisQuestions.length === 0 ) return  window.location.href = "result.html";
 
             // Removes the classList "CORRECT".
             answers.forEach( option => {
